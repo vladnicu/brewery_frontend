@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './authenticated/dashboard/dashboard.component';
 
 import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
