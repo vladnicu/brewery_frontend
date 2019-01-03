@@ -10,16 +10,18 @@ import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './authenticated/dashboard/dashboard.component';
 
 import { AuthService } from './auth/auth.service';
+import { BreweryService } from './authenticated/brewery/brewery.service';
 import { AuthGuard } from './auth/auth.guard';
 import { TokenInterceptorService } from './auth/services/token-interceptor.service';
-import { Token } from '@angular/compiler';
+import { BreweryComponent } from './authenticated/brewery/brewery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    BreweryComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { Token } from '@angular/compiler';
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthService, AuthGuard,
+  providers: [AuthService, BreweryService, AuthGuard,
   {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,
