@@ -8,7 +8,7 @@ import { AuthService } from './../auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  loginUserData = {};
+  loginUserData = { grant_type: 'password', client_id: '2', client_secret: '89tqIzrrCwZMpuMWheP1rlXM2NjeXvQsCpFT0g1Z', scope: '*'};
 
   constructor(private _auth: AuthService, private _router: Router) { }
 
@@ -16,11 +16,10 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser() {
-    this._auth.registerUser(this.loginUserData)
+    this._auth.loginUser(this.loginUserData)
     .subscribe(
       res => {
-        // localStorage.setItem('token', res.token);
-        localStorage.setItem('token', 'test');
+        localStorage.setItem('token', res.access_token);
         this._router.navigate(['/dashboard']);
       },
       err => console.log(err)

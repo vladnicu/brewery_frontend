@@ -13,7 +13,6 @@ export class AuthService {
   constructor(private http: HttpClient, private _router: Router) { }
 
   registerUser(user) {
-    console.log(JSON.stringify(user));
     return this.http.post<any>(this._registerUrl, JSON.stringify(user));
   }
 
