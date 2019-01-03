@@ -1,22 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private _registerUrl = 'http....';
-  private _loginUrl = 'http....';
+  private _registerUrl = 'http://homebrewing.test:8000/api/register';
+  private _loginUrl = 'http://homebrewing.test:8000/oauth/token';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private _router: Router) { }
 
   registerUser(user) {
-    return this.http.post<any>(this._registerUrl, user);
+    console.log(JSON.stringify(user));
+    return this.http.post<any>(this._registerUrl, JSON.stringify(user));
   }
 
   loginUser(user) {
-    return this.http.post<any>(this._loginUrl, user);
+    return this.http.post<any>(this._loginUrl, JSON.stringify(user));
+  }
+
+  logoutUser() {
+    localStorage.removeItem('token');
+    this._router.navigate(['/dashboard']);
   }
 
   loggedIn() {
@@ -26,8 +33,5 @@ export class AuthService {
   getToken() {
     return localStorage.getItem('token');
   }
-
-
-
 
 }
