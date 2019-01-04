@@ -14,6 +14,7 @@ import { BreweryService } from './authenticated/brewery/brewery.service';
 import { AuthGuard } from './auth/auth.guard';
 import { TokenInterceptorService } from './auth/services/token-interceptor.service';
 import { BreweryComponent } from './authenticated/brewery/brewery.component';
+import { LoaderComponent } from './common/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BreweryComponent } from './authenticated/brewery/brewery.component';
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    BreweryComponent
+    BreweryComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
