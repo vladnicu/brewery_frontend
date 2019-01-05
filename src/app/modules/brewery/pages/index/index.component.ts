@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { BreweryService } from './brewery.service';
+import { BreweryService } from '../../services/brewery.service';
 
 @Component({
-  selector: 'app-brewery',
-  templateUrl: './brewery.component.html',
-  styleUrls: ['./brewery.component.scss']
+  selector: 'app-index',
+  templateUrl: './index.component.html',
+  styleUrls: ['./index.component.scss']
 })
-export class BreweryComponent implements OnInit {
+export class IndexComponent implements OnInit {
 
   breweries = [];
 

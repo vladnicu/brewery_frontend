@@ -7,22 +7,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './authenticated/dashboard/dashboard.component';
 
-import { BreweryService } from './authenticated/brewery/brewery.service';
-import { BreweryComponent } from './authenticated/brewery/brewery.component';
+import { BreweryService } from './modules/brewery/services/brewery.service';
+import { BreweryModule } from './modules/brewery/brewery.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    BreweryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    BreweryModule
   ],
   providers: [BreweryService],
   bootstrap: [AppComponent]
