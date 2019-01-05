@@ -5,7 +5,7 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './authenticated/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { BreweryService } from './modules/brewery/services/brewery.service';
 import { BreweryModule } from './modules/brewery/brewery.module';
