@@ -8,9 +8,6 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { BreweryService } from './modules/brewery/services/brewery.service';
-import { BreweryModule } from './modules/brewery/brewery.module';
-
-
 
 @NgModule({
   declarations: [
@@ -23,7 +20,6 @@ import { BreweryModule } from './modules/brewery/brewery.module';
     HttpClientModule,
     CoreModule,
     SharedModule,
-    BreweryModule
   ],
   providers: [BreweryService],
   bootstrap: [AppComponent]
