@@ -6,8 +6,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BreweryService {
 
+  // TODO improve the URLS later
   private _breweriesUrl = 'http://homebrewing.test:8000/api/breweries/';
   private _storeBreweryUrl = 'http://homebrewing.test:8000/api/breweries/';
+  private _updateBreweryUrl = 'http://homebrewing.test:8000/api/breweries/6';
 
   constructor(private http: HttpClient) { }
 
@@ -17,5 +19,9 @@ export class BreweryService {
 
   storeBrewery(brewery) {
     return this.http.post<any>(this._storeBreweryUrl, JSON.stringify(brewery));
+  }
+
+  updateBrewery(brewery) {
+    return this.http.patch<any>(this._updateBreweryUrl, JSON.stringify(brewery));
   }
 }

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BreweryService } from '../../services/brewery.service';
 
 @Component({
-  selector: 'app-store',
-  templateUrl: './store.component.html',
-  styleUrls: ['./store.component.scss']
+  selector: 'app-update',
+  templateUrl: './update.component.html',
+  styleUrls: ['./update.component.scss']
 })
-export class StoreComponent implements OnInit {
+export class UpdateComponent implements OnInit {
 
   breweryData = {};
 
@@ -15,11 +15,11 @@ export class StoreComponent implements OnInit {
   ngOnInit() {
   }
 
-  storeBrewery() {
-    this._breweryService.storeBrewery(this.breweryData)
+  updateBrewery() {
+    this._breweryService.updateBrewery(this.breweryData)
     .subscribe(
       res => {
-         // TODO navigate somewhere
+        // TODO navigate somewhere
         // this._router.navigate(['/dashboard']);
       },
       err => console.log(err)
