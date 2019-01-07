@@ -20,4 +20,15 @@ export class IndexComponent implements OnInit {
       );
   }
 
+  deleteBrewery() {
+    this._breweryService.deleteBrewery()
+    .subscribe(
+      res => {
+        // TODO navigate somewhere
+        // this._router.navigate(['/dashboard']);
+      },
+      err => console.log(err)
+    );
+  }
+
 }

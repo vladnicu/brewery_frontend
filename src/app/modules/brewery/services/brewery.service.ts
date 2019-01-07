@@ -10,6 +10,7 @@ export class BreweryService {
   private _breweriesUrl = 'http://homebrewing.test:8000/api/breweries/';
   private _storeBreweryUrl = 'http://homebrewing.test:8000/api/breweries/';
   private _updateBreweryUrl = 'http://homebrewing.test:8000/api/breweries/6';
+  private _deleteBreweryUrl = 'http://homebrewing.test:8000/api/breweries/6';
 
   constructor(private http: HttpClient) { }
 
@@ -23,5 +24,9 @@ export class BreweryService {
 
   updateBrewery(brewery) {
     return this.http.patch<any>(this._updateBreweryUrl, JSON.stringify(brewery));
+  }
+
+  deleteBrewery() {
+    return this.http.delete<any>(this._deleteBreweryUrl);
   }
 }
