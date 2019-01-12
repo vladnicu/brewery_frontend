@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'breweries', loadChildren: './modules/brewery/brewery.module#BreweryModule'},
+  { path: 'receipes', loadChildren: './modules/receipes/receipes.module#ReceipesModule'},
 ];
 
 @NgModule({
