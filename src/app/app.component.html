@@ -8,6 +8,9 @@
     <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/breweries" routerLinkActive="active">Breweries</a>
   </li>
   <li class="nav-item">
+    <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes" routerLinkActive="active">Receipes</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" *ngIf="!_authService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a>
   </li>
   <li class="nav-item">

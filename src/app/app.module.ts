@@ -7,8 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { BreweryService } from './modules/brewery/services/brewery.service';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +19,7 @@ import { BreweryService } from './modules/brewery/services/brewery.service';
     CoreModule,
     SharedModule,
   ],
-  providers: [BreweryService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

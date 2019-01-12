@@ -1,0 +1,13 @@
+
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let receipe of receipes">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ receipe.title }}
+        </h5>
+        <a routerLink="update" routerLinkActive="active" class="btn btn-primary">Update</a>
+      </div>
+    </div>
+  </div>
+</div>

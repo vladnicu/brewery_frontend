@@ -7,12 +7,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
-  { path: 'login', component: LoginComponent},
-  { path: 'register', component: RegisterComponent},
-  { path: 'breweries', loadChildren: './modules/brewery/brewery.module#BreweryModule'},
-  { path: 'receipes', loadChildren: './modules/receipes/receipes.module#ReceipesModule'},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'breweries', loadChildren: './modules/brewery/brewery.module#BreweryModule' },
+  { path: 'receipes', loadChildren: './modules/receipes/receipes.module#ReceipesModule' },
 ];
 
 @NgModule({

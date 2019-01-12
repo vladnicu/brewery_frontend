@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ReceipesRoutingModule } from './receipes-routing.module';
 
+import { IndexComponent } from './pages/index/index.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [IndexComponent],
   imports: [
     CommonModule,
     ReceipesRoutingModule
