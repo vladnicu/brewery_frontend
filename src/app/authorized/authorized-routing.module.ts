@@ -11,7 +11,11 @@ const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        loadChildren: './dashboard/dashboard.module#DashboardModule'
+        loadChildren: './dashboard/dashboard.module#DashboardModule',
+      },
+      {
+        path: 'receipes',
+        loadChildren: './receipes/receipes.module#ReceipesModule',
       }
     ]
   }

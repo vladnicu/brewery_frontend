@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-import { IndexComponent } from './pages/index/index.component';
-import { StoreComponent } from './pages/store/store.component';
-import { UpdateComponent } from './pages/update/update.component';
+import { IndexComponent } from './components/index/index.component';
+import { StoreComponent } from './components/store/store.component';
+import { UpdateComponent } from './components/update/update.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent, pathMatch: 'full' },

@@ -1,15 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { IndexComponent } from './pages/index/index.component';
-import { AuthGuard } from '../../core/guards/auth.guard';
+import { IndexComponent } from './components/index/index.component';
+import { ShowComponent } from './components/show/show.component';
 // import { StoreComponent } from './pages/store/store.component';
 // import { UpdateComponent } from './pages/update/update.component';
 
 const routes: Routes = [
-  { path: '', component: IndexComponent, canActivate: [AuthGuard], pathMatch: 'full' },
-  // { path: 'create', component: StoreComponent, canActivate: [AuthGuard] },
-  // { path: 'update', component: UpdateComponent, canActivate: [AuthGuard] },
+  {
+    path: '',
+    redirectTo: 'recipes',
+    pathMatch: 'full'
+  },
+  {
+    path: 'receipes',
+    component: IndexComponent
+  },
+  {
+    path: 'show',
+    component: ShowComponent
+  }
 ];
 
 @NgModule({
