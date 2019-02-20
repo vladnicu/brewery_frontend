@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { IBrewery } from './brewery.service';
+
+export interface IUser {
+  name: string;
+  email: string;
+  brewery: IBrewery;
+}
 
 @Injectable({
   providedIn: 'root'
