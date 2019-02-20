@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { LoaderState } from '../models/loader';
+
+export interface LoaderState {
+  show: boolean;
+}
+
 
 @Injectable({
   providedIn: 'root'
