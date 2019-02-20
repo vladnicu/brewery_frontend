@@ -15,7 +15,7 @@ const routes: Routes = [
       // },
       {
         path: 'receipes',
-        loadChildren: './receipes/receipes.module#ReceipesModule',
+        loadChildren: './receipes/receipes.module#ReceipesModule'
       }
     ]
   }
