@@ -1,3 +1,24 @@
-<p>
-  layout works!
-</p>
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/dashboard" routerLinkActive="active">DashBoard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/breweries" routerLinkActive="active">Breweries</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes" routerLinkActive="active">Receipes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" *ngIf="!_authService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" *ngIf="!_authService.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" *ngIf="_authService.loggedIn()" routerLink="/register" (click)="_authService.logoutUser()">Logout</a>
+  </li>
+</ul>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -9,10 +9,10 @@ const routes: Routes = [
     component: LayoutComponent,
     canActivate: [AuthGuard],
     children: [
-      {
-        path: 'dashboard',
-        loadChildren: './dashboard/dashboard.module#DashboardModule',
-      },
+      // {
+      //   path: 'dashboard',
+      //   loadChildren: './dashboard/dashboard.module#DashboardModule',
+      // },
       {
         path: 'receipes',
         loadChildren: './receipes/receipes.module#ReceipesModule',
