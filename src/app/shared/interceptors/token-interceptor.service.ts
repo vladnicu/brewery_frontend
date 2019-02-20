@@ -1,6 +1,6 @@
 import { Injectable, Injector } from '@angular/core';
 import { HttpInterceptor, HttpEvent, HttpResponse } from '@angular/common/http';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../shared/services/auth.service';
 import { LoaderService  } from '../../shared/services/loader.service';
 
 import { tap } from 'rxjs/operators';
