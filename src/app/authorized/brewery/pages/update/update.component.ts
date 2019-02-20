@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreweryService } from '../../services/brewery.service';
+import { BreweryService } from '../../../../shared/services/brewery.service';
 
 @Component({
   selector: 'app-update',

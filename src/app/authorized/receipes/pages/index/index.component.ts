@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReceipesService } from '../../services/receipes.service';
+import { ReceipesService } from '../../../../shared/services/receipes.service';
 
 @Component({
   selector: 'app-index',
