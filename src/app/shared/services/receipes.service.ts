@@ -14,7 +14,7 @@ export class ReceipesService {
 
   constructor(private http: HttpClient) { }
 
-  getReceipes() {
+  getReceipes(){
     return this.http.get<any>(this._receipesUrl);
   }
 

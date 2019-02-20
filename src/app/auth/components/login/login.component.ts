@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     .subscribe(
       res => {
         localStorage.setItem('token', res.access_token);
-        this._router.navigate(['/dashboard']);
+        this._router.navigate(['/receipes']);
       },
       err => console.log(err)
     );
