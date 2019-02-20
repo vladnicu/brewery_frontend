@@ -21,7 +21,7 @@ export class IndexComponent implements OnInit {
   }
 
   deleteBrewery() {
-    this._breweryService.deleteBrewery() 
+    this._breweryService.deleteBrewery()
     .subscribe(
       res => {
         // TODO navigate somewhere
