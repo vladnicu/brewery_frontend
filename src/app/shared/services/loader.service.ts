@@ -5,7 +5,6 @@ export interface LoaderState {
   show: boolean;
 }
 
-
 @Injectable({
   providedIn: 'root'
 })

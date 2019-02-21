@@ -16,7 +16,12 @@ const routes: Routes = [
       {
         path: 'receipes',
         loadChildren: './receipes/receipes.module#ReceipesModule'
+      },
+      {
+        path: 'brewery',
+        loadChildren: './brewery/brewery.module#BreweryModule'
       }
+
     ]
   }
 ];

@@ -10,19 +10,19 @@ import { UpdateComponent } from './components/update/update.component';
 const routes: Routes = [
   { path: '', component: IndexComponent, pathMatch: 'full' },
   { path: 'create', component: StoreComponent },
-  { path: 'update', component: UpdateComponent },
+  { path: 'update', component: UpdateComponent }
 ];
 
 @NgModule({
   declarations: [
     IndexComponent,
     StoreComponent,
-    UpdateComponent,
+    UpdateComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FormsModule,
+    FormsModule
   ]
 })
 export class BreweryModule { }
