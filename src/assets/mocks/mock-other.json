@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Cinnamon",
+        "type": "Spice",
+        "use": "Boil"
+    },
+    {
+        "name": "Agave",
+        "type": "Flavor",
+        "use": "Boil"
+    },
+    {
+        "name": "Basil",
+        "type": "Herb",
+        "use": "Boil"
+    },
+    {
+        "name": "Cinnamon",
+        "type": "Spice",
+        "use": "Boil"
+    },
+    {
+        "name": "Agave",
+        "type": "Flavor",
+        "use": "Boil"
+    },
+    {
+        "name": "Basil",
+        "type": "Herb",
+        "use": "Boil"
+    },
+    {
+        "name": "Cinnamon",
+        "type": "Spice",
+        "use": "Boil"
+    },
+    {
+        "name": "Agave",
+        "type": "Flavor",
+        "use": "Boil"
+    },
+    {
+        "name": "Basil",
+        "type": "Herb",
+        "use": "Boil"
+    }
+]

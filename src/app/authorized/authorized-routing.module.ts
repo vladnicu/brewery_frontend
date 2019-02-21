@@ -32,6 +32,10 @@ const routes: Routes = [
       {
         path: 'yeast',
         loadChildren: './yeast/yeast.module#YeastModule'
+      },
+      {
+        path: 'other',
+        loadChildren: './other/other.module#OtherModule'
       }
 
     ]
