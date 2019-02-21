@@ -24,6 +24,10 @@ const routes: Routes = [
       {
         path: 'fermentables',
         loadChildren: './fermentables/fermentables.module#FermentablesModule'
+      },
+      {
+        path: 'hops',
+        loadChildren: './hops/hops.module#HopsModule'
       }
 
     ]

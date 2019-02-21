@@ -1,40 +1,42 @@
 <div class="container-fluid">
   <app-top-bar></app-top-bar>
-</div>
 
-<div class="row">
 
-  <div class="col-md-2">
-    <ul class="nav flex-column bg-light">
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/dashboard"
-          routerLinkActive="active">DashBoard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
-          routerLinkActive="active">Receipes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/fermentables"
-          routerLinkActive="active">Fermentables</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
-          routerLinkActive="active">Hops</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
-          routerLinkActive="active">Yeast</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
-          routerLinkActive="active">Tools</a>
-      </li>
-    </ul>
+  <div class="row">
 
+    <div class="col-md-2">
+      <ul class="nav flex-column bg-light">
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/dashboard"
+            routerLinkActive="active">DashBoard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
+            routerLinkActive="active">Receipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/fermentables"
+            routerLinkActive="active">Fermentables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/hops"
+            routerLinkActive="active">Hops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
+            routerLinkActive="active">Yeast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
+            routerLinkActive="active">Tools</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
-  <div class="col-md-10">
-    <router-outlet></router-outlet>
-  </div>
 </div>

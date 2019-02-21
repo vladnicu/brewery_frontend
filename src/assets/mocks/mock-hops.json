@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Admiral",
+        "type": "Pellet",
+        "average_aa": "14",
+        "use": "Boil"
+    },
+    {
+        "name": "Amarillo",
+        "type": "Leaf/Whole",
+        "average_aa": "8.3",
+        "use": "Whirlpool"
+    },
+    {
+        "name": "Apollo",
+        "type": "Pellet",
+        "average_aa": "10",
+        "use": "Dry Hop"
+    },
+    {
+        "name": "Admiral",
+        "type": "Pellet",
+        "average_aa": "14",
+        "use": "Boil"
+    },
+    {
+        "name": "Amarillo",
+        "type": "Leaf/Whole",
+        "average_aa": "8.3",
+        "use": "Whirlpool"
+    },
+    {
+        "name": "Apollo",
+        "type": "Pellet",
+        "average_aa": "10",
+        "use": "Dry Hop"
+    },
+    {
+        "name": "Admiral",
+        "type": "Pellet",
+        "average_aa": "14",
+        "use": "Boil"
+    },
+    {
+        "name": "Amarillo",
+        "type": "Leaf/Whole",
+        "average_aa": "8.3",
+        "use": "Whirlpool"
+    },
+    {
+        "name": "Apollo",
+        "type": "Pellet",
+        "average_aa": "10",
+        "use": "Dry Hop"
+    }
+]
