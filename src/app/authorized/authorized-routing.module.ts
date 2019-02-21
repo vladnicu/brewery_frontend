@@ -20,6 +20,10 @@ const routes: Routes = [
       {
         path: 'brewery',
         loadChildren: './brewery/brewery.module#BreweryModule'
+      },
+      {
+        path: 'fermentables',
+        loadChildren: './fermentables/fermentables.module#FermentablesModule'
       }
 
     ]
