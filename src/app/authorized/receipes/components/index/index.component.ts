@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ReceipesService } from '../../../../shared/services/receipes.service';
+import { ReceipesService, IReceipe } from '../../../../shared/services/receipes.service';
+import { Observable } from 'rxjs';
+import { DataSource } from '@angular/cdk/collections';
+
 
 @Component({
   selector: 'app-index',
@@ -8,16 +11,23 @@ import { ReceipesService } from '../../../../shared/services/receipes.service';
 })
 export class IndexComponent implements OnInit {
 
-  receipes = [];
+  dataSource = new UserDataSource(this.receipesService);
+  displayedColumns = ['title'];
 
-  constructor(private _receipesService: ReceipesService) { }
+  constructor(private receipesService: ReceipesService) { }
 
-  ngOnInit() {
-    this._receipesService.getReceipes()
-      .subscribe(
-          res => this.receipes = res.data,
-          err => console.log(err)
-      );
+  ngOnInit() { }
+
+}
+
+export class UserDataSource extends DataSource<any> {
+  constructor(private receipesService: ReceipesService) {
+    super();
   }
 
+  connect(): Observable<IReceipe[]> {
+    return this.receipesService.getReceipes();
+  }
+
+  disconnect() {}
 }

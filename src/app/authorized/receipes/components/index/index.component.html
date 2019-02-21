@@ -1,13 +1,11 @@
 
-<div class="row mt-5">
-  <div class="col-md-4 mb-3" *ngFor="let receipe of receipes">
-    <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">
-          {{ receipe.title }}
-        </h5>
-        <a routerLink="update" routerLinkActive="active" class="btn btn-primary">Update</a>
-      </div>
-    </div>
-  </div>
+<div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.title }}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
 </div>
