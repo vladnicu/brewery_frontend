@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Halcyon Pale Ale",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "3",
+        "ppg": "37"
+    },
+    {
+        "name": "Aciculated",
+        "country": "Germany",
+        "category": "Grain",
+        "type": "Acidulated malt",
+        "color": "3",
+        "ppg": "27"
+    },
+    {
+        "name": "Amber",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "27",
+        "ppg": "32"
+    },
+    {
+        "name": "Halcyon Pale Ale",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "3",
+        "ppg": "37"
+    },
+    {
+        "name": "Aciculated",
+        "country": "Germany",
+        "category": "Grain",
+        "type": "Acidulated malt",
+        "color": "3",
+        "ppg": "27"
+    },
+    {
+        "name": "Amber",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "27",
+        "ppg": "32"
+    },
+    {
+        "name": "Halcyon Pale Ale",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "3",
+        "ppg": "37"
+    },
+    {
+        "name": "Aciculated",
+        "country": "Germany",
+        "category": "Grain",
+        "type": "Acidulated malt",
+        "color": "3",
+        "ppg": "27"
+    },
+    {
+        "name": "Amber",
+        "country": "United Kingdom",
+        "category": "Grain",
+        "type": "Base malt",
+        "color": "27",
+        "ppg": "32"
+    }
+]
