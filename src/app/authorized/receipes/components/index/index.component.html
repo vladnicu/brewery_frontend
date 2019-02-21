@@ -1,9 +1,32 @@
-
 <div>
   <mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
       <mat-cell *matCellDef="let receipe"> {{ receipe.title }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="style">
+      <mat-header-cell *matHeaderCellDef> Style </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.style }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="method">
+      <mat-header-cell *matHeaderCellDef> Method </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.method }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="boil_size">
+      <mat-header-cell *matHeaderCellDef> Size </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.boil_size }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="abv">
+      <mat-header-cell *matHeaderCellDef> ABV %</mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.abv }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="ibu">
+      <mat-header-cell *matHeaderCellDef> IBU </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.ibu }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="srm">
+      <mat-header-cell *matHeaderCellDef> SRM &deg;L</mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.srm }}</mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>

@@ -12,7 +12,15 @@ import { DataSource } from '@angular/cdk/collections';
 export class IndexComponent implements OnInit {
 
   dataSource = new UserDataSource(this.receipesService);
-  displayedColumns = ['title'];
+  displayedColumns = [
+    'title',
+    'style',
+    'method',
+    'boil_size',
+    'abv',
+    'ibu',
+    'srm'
+  ];
 
   constructor(private receipesService: ReceipesService) { }
 

@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 export interface IReceipe {
   title: string;
-  method?: string;
   style?: string;
+  method?: string;
   boil_time?: string;
   boil_size?: string;
   o_gravity?: string;
