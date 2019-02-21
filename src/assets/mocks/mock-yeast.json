@@ -1,0 +1,134 @@
+[
+    {
+        "name": "71B-1122",
+        "laboratory": "Lalvin",
+        "code": "",
+        "type": "Ale",
+        "alcohol_tol": "Low",
+        "flocculation": "Medium",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "65"
+    },
+    {
+        "name": "A09 Pub",
+        "laboratory": "Imperial Yeast",
+        "code": "A15 Independence",
+        "type": "Bretts and Blends",
+        "alcohol_tol": "High",
+        "flocculation": "Medium-low",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "80"
+    },
+    {
+        "name": "A10 Darkness",
+        "laboratory": "Imperial Yeast",
+        "code": "A13 Sovereign",
+        "type": "Belgian Ales",
+        "alcohol_tol": "11%",
+        "flocculation": "Very High",
+        "attenuation": "71",
+        "min_temp": "65",
+        "max_temp": "70"
+    },
+    {
+        "name": "71B-1122",
+        "laboratory": "Lalvin",
+        "code": "",
+        "type": "Ale",
+        "alcohol_tol": "Low",
+        "flocculation": "Medium",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "65"
+    },
+    {
+        "name": "A09 Pub",
+        "laboratory": "Imperial Yeast",
+        "code": "A15 Independence",
+        "type": "Bretts and Blends",
+        "alcohol_tol": "High",
+        "flocculation": "Medium-low",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "80"
+    },
+    {
+        "name": "A10 Darkness",
+        "laboratory": "Imperial Yeast",
+        "code": "A13 Sovereign",
+        "type": "Belgian Ales",
+        "alcohol_tol": "11%",
+        "flocculation": "Very High",
+        "attenuation": "71",
+        "min_temp": "65",
+        "max_temp": "70"
+    },
+    {
+        "name": "71B-1122",
+        "laboratory": "Lalvin",
+        "code": "",
+        "type": "Ale",
+        "alcohol_tol": "Low",
+        "flocculation": "Medium",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "65"
+    },
+    {
+        "name": "A09 Pub",
+        "laboratory": "Imperial Yeast",
+        "code": "A15 Independence",
+        "type": "Bretts and Blends",
+        "alcohol_tol": "High",
+        "flocculation": "Medium-low",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "80"
+    },
+    {
+        "name": "A10 Darkness",
+        "laboratory": "Imperial Yeast",
+        "code": "A13 Sovereign",
+        "type": "Belgian Ales",
+        "alcohol_tol": "11%",
+        "flocculation": "Very High",
+        "attenuation": "71",
+        "min_temp": "65",
+        "max_temp": "70"
+    },
+    {
+        "name": "71B-1122",
+        "laboratory": "Lalvin",
+        "code": "",
+        "type": "Ale",
+        "alcohol_tol": "Low",
+        "flocculation": "Medium",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "65"
+    },
+    {
+        "name": "A09 Pub",
+        "laboratory": "Imperial Yeast",
+        "code": "A15 Independence",
+        "type": "Bretts and Blends",
+        "alcohol_tol": "High",
+        "flocculation": "Medium-low",
+        "attenuation": "65",
+        "min_temp": "65",
+        "max_temp": "80"
+    },
+    {
+        "name": "A10 Darkness",
+        "laboratory": "Imperial Yeast",
+        "code": "A13 Sovereign",
+        "type": "Belgian Ales",
+        "alcohol_tol": "11%",
+        "flocculation": "Very High",
+        "attenuation": "71",
+        "min_temp": "65",
+        "max_temp": "70"
+    }
+] 

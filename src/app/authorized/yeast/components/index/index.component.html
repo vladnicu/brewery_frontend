@@ -1,0 +1,42 @@
+<div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.name }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="laboratory">
+      <mat-header-cell *matHeaderCellDef> laboratory </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.laboratory }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="code">
+      <mat-header-cell *matHeaderCellDef> Code </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.code }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="type">
+      <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.type }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="alcohol_tol">
+      <mat-header-cell *matHeaderCellDef> Alcohol Tolerance </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.alcohol_tol }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="flocculation">
+      <mat-header-cell *matHeaderCellDef> Flocculation </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.flocculation }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="attenuation">
+      <mat-header-cell *matHeaderCellDef> Attenuation </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.attenuation }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="min_temp">
+      <mat-header-cell *matHeaderCellDef> Min temp </mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.min_temp }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="max_temp">
+      <mat-header-cell *matHeaderCellDef> Max temp</mat-header-cell>
+      <mat-cell *matCellDef="let receipe"> {{ receipe.max_temp }}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

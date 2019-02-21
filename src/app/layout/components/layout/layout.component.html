@@ -23,8 +23,12 @@
             routerLinkActive="active">Hops</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/yeast"
             routerLinkActive="active">Yeast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/other"
+            routerLinkActive="active">Other</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" *ngIf="_authService.loggedIn()" routerLink="/receipes"

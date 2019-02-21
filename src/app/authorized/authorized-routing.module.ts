@@ -28,6 +28,10 @@ const routes: Routes = [
       {
         path: 'hops',
         loadChildren: './hops/hops.module#HopsModule'
+      },
+      {
+        path: 'yeast',
+        loadChildren: './yeast/yeast.module#YeastModule'
       }
 
     ]
