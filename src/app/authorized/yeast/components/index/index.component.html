@@ -25,15 +25,15 @@
       <mat-cell *matCellDef="let receipe"> {{ receipe.flocculation }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="attenuation">
-      <mat-header-cell *matHeaderCellDef> Attenuation </mat-header-cell>
+      <mat-header-cell *matHeaderCellDef> Attenuation% </mat-header-cell>
       <mat-cell *matCellDef="let receipe"> {{ receipe.attenuation }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="min_temp">
-      <mat-header-cell *matHeaderCellDef> Min temp </mat-header-cell>
+      <mat-header-cell *matHeaderCellDef> Min temp&deg;C</mat-header-cell>
       <mat-cell *matCellDef="let receipe"> {{ receipe.min_temp }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="max_temp">
-      <mat-header-cell *matHeaderCellDef> Max temp</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef> Max temp&deg;C </mat-header-cell>
       <mat-cell *matCellDef="let receipe"> {{ receipe.max_temp }}</mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
