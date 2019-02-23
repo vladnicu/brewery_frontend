@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { IFermentable } from './fermentables.service';
+import { IHop } from './hops.service';
+import { IYeast } from './yeast.service';
+import { IOtherIngredient } from './other.service';
 
 export interface IReceipe {
   title: string;
@@ -12,6 +16,10 @@ export interface IReceipe {
   abv?: string;
   ibu?: string;
   srm?: string;
+  fermentables?: IFermentable[];
+  hops?: IHop[];
+  yeast?: IYeast[];
+  otherIngredients?: IOtherIngredient[];
 }
 
 @Injectable({
@@ -44,4 +52,5 @@ export class ReceipesService {
   deleteReceipe() {
     return this.http.delete<any>(this._deleteReceipeUrl);
   }
+
 }
