@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IReceipe, ReceipesService } from 'src/app/shared/services/receipes.service';
 
 @Component({
   selector: 'app-show',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowComponent implements OnInit {
 
-  constructor() { }
+  receipe: IReceipe;
+
+  constructor(private receipesService: ReceipesService) { }
 
   ngOnInit() {
+    console.log(this.receipe);
+    this.receipesService.getReceipeById(1)
+      .subscribe(
+        (res: IReceipe) => this.receipe = res
+      );
   }
 
 }

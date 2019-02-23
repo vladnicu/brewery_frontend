@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import { environment } from './../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { IFermentable } from './fermentables.service';
 import { IHop } from './hops.service';
 import { IYeast } from './yeast.service';
 import { IOtherIngredient } from './other.service';
 
+const API_URL = environment.apiUrl;
+
 export interface IReceipe {
+  id: number;
   title: string;
   style?: string;
   method?: string;
@@ -27,9 +31,10 @@ export interface IReceipe {
 })
 export class ReceipesService {
 
+
   // TODO improve the URLS later
   // private _receipesUrl = 'http://homebrewing.test:8000/api/breweries/3/receipes';
-  private _receipesUrl = 'http://localhost:4200/assets/mocks/mock-receipes.json';
+  private receipesUrl = API_URL + '/receipes';
 
   private _storeReceipeUrl = 'http://homebrewing.test:8000/api/breweries/';
   private _updateReceipeUrl = 'http://homebrewing.test:8000/api/breweries/6';
@@ -38,7 +43,11 @@ export class ReceipesService {
   constructor(private http: HttpClient) { }
 
   getReceipes() {
-    return this.http.get<any>(this._receipesUrl);
+    return this.http.get<IReceipe[]>(this.receipesUrl);
+  }
+
+  getReceipeById(receipeId: number) {
+    return this.http.get<IReceipe>(this.receipesUrl + '/' + receipeId);
   }
 
   storeReceipe(receipe) {
@@ -53,4 +62,8 @@ export class ReceipesService {
     return this.http.delete<any>(this._deleteReceipeUrl);
   }
 
+  // private handleError (error: Response | any) {
+  //   console.error('ApiService::handleError', error);
+  //   return Observable.throw(error);
+  // }
 }

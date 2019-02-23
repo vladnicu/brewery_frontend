@@ -6,6 +6,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "50.05",
             "srm": "8"
@@ -16,6 +18,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "40",
             "srm": "4.83"
@@ -26,6 +30,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -36,6 +42,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -46,6 +54,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -56,6 +66,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -66,6 +78,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -76,6 +90,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "61.03",
             "srm": "7.77"
@@ -86,6 +102,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "40",
             "srm": "4.83"
@@ -96,6 +114,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "40",
             "srm": "4.83"
@@ -106,6 +126,8 @@
             "style": "American Pale Ale",
             "method": "All Grain",
             "boil_size": "6.5",
+            "o_gravity": "1.065",
+            "f_gravity": "1.011",
             "abv": "5.50",
             "ibu": "40",
             "srm": "4.83"

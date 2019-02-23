@@ -2,7 +2,9 @@
   <mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
-      <mat-cell *matCellDef="let receipe"> {{ receipe.title }}</mat-cell>
+      <mat-cell *matCellDef="let receipe">
+        <a class="nav-link active" routerLink="/receipes/{{ receipe.id }}">{{ receipe.title }}</a>
+      </mat-cell>
     </ng-container>
     <ng-container matColumnDef="style">
       <mat-header-cell *matHeaderCellDef> Style </mat-header-cell>
