@@ -1,0 +1,114 @@
+{
+    "receipes": [
+        {
+            "id": 1,
+            "title": "Mango DIPA",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "50.05",
+            "srm": "8"
+        },
+        {
+            "id": 2,
+            "title": "Madame Uppercut",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "40",
+            "srm": "4.83"
+        },
+        {
+            "id": 3,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 4,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 5,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 6,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 7,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 8,
+            "title": "Eternal Flame",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "61.03",
+            "srm": "7.77"
+        },
+        {
+            "id": 9,
+            "title": "Madame Uppercut",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "40",
+            "srm": "4.83"
+        },
+        {
+            "id": 10,
+            "title": "Madame Uppercut",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "40",
+            "srm": "4.83"
+        },
+        {
+            "id": 11,
+            "title": "Madame Uppercut",
+            "style": "American Pale Ale",
+            "method": "All Grain",
+            "boil_size": "6.5",
+            "abv": "5.50",
+            "ibu": "40",
+            "srm": "4.83"
+        }
+    ]
+}
